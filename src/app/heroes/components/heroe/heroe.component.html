@@ -1,0 +1,30 @@
+<h1>heroe works!</h1>
+<!--Esta es una interporlacion de valores debido a que esta intuyendo-->
+<dl>
+  <td>Nombre:</td>
+  <dd>{{ name }}</dd>
+
+  <td>Edad:</td>
+  <dd>{{ age }}</dd>
+
+  <td>Método:</td>
+  <dd>{{ HeroDescripcion() }}</dd>
+
+  <td>Capitalizado:</td>
+  <dd>{{ capitalizedName }}</dd>
+</dl>
+
+<!--directiva ngIf-->
+<button
+  *ngIf="name !=='Spider-Man'"
+  class="btn btn-primary mx-2" (click)="changeHero()">
+  Cambiar nombre
+</button>
+<button
+*ngIf="age.toString() !=='35'"
+class="btn btn-primary" (click)="changeAge()">
+Cambiar edad
+</button>
+<button  (click)="resetForm()" class="btn btn-primary mx-2">
+Reset
+</button>
