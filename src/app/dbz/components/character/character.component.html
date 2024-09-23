@@ -1,0 +1,22 @@
+<!-- Cuando era un evento era en ()
+ Cuando es un atributo se da en []-->
+
+<h4>Agregar personaje</h4>
+<!--Emitir eventos al padre-->
+<form class="row" (ngSubmit)="emitCharacter()">
+  <input type="text"
+  [(ngModel)]="character.name"
+  name="name"
+  class="form-control"
+  placeholder="Nombre">
+
+  <input type="number"
+  [(ngModel)]="character.power"
+  name="power"
+  class="form-control mb-2"
+  placeholder="Poder">
+
+<!-- {{character | json}} -->
+<button type="submit" class="btn btn-primary" > Agregar</button>
+</form>
+

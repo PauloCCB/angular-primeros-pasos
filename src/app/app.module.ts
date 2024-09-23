@@ -6,6 +6,10 @@ import { AppComponent } from './app.component';
 
 import { CounterModule } from './counter/counter.module';
 import { HeroModuleComponent } from './heroes/hero.module';
+import { MainDBZComponent } from './dbz/pages/main-page.component';
+import { DbzModule } from './dbz/dbz.module';
+
+
 
 //Este es el modulo que contiene a varios componentes
 @NgModule({
@@ -17,7 +21,8 @@ import { HeroModuleComponent } from './heroes/hero.module';
     BrowserModule,
     CounterModule,
     HeroModuleComponent,
-    AppRoutingModule
+    AppRoutingModule,
+    DbzModule
   ],
   providers: [],
   bootstrap: [AppComponent]
